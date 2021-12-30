@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Control of Expenses</title>
+  </head>
+  <body>
+    <h2>Control of Expenses</h2>
+
+    <div class="container">
+      <h4>Current Balance</h4>
+      
+      <h1 id="balance" class="balance">R$ 0.00</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money plus">+ R$0.00</p>
+        </div>
+
+        <div>
+          <h4>Expenditure</h4>
+          <p id="money-minus" class="money minus">- R$0.00</p>
+        </div>
+      </div>
+
+      <h3>Transactions</h3>
+      
+      <ul id="transactions" class="transactions"></ul>
+
+      <h3>Add Transaction</h3>
+      
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Name</label>
+          <input autofocus type="text" id="text" placeholder="Name of Transaction" />
+        </div>
+
+        <div class="form-control">
+          <label for="amount">Value <br />
+            <small>(Negative - Expenses, Positive - Income)</small>
+          </label>
+          <input type="number" id="amount" placeholder="Value of Transaction" />
+        </div>
+
+        <button class="btn">To Add</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
